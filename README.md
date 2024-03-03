@@ -13,3 +13,29 @@
 This is an analysis of the superstore dataset from Kaggle as linked above. As seen in the screenshots in the year slicer this shows data for 2016. 
 It details total sales, profits, gross margin percentages, and year-over-year sales growth.
 It also segments data by consumer groups, product categories (Technology, Furniture, Office Supplies), and geographical regions (West, East, Central, South), offering insights into the performance metrics like total orders and sales by quarter. 
+
+## DAX Measures
+
+Total Sales = SUM(Superstore[Sales])
+
+Total Profit = SUM(Superstore[Profit])
+
+Gross Margin % = DIVIDE([Total Profit],[Total Sales], 0.0)
+
+Sales Growth = 
+VAR CurrentYearSales = [Total Sales]
+VAR PreviousYearSales = CALCULATE([Total Sales], SAMEPERIODLASTYEAR('Date'[Date]))
+RETURN
+IF(ISBLANK(PreviousYearSales), 0.0, (CurrentYearSales - PreviousYearSales) / PreviousYearSales)
+
+Total Orders = COUNTROWS(Superstore)
+
+Avg Order-to-Ship Days = 
+AVERAGEX(
+    SUMMARIZE('Superstore', 'Superstore'[Product ID]),
+    DATEDIFF(
+        MIN('Superstore'[Order Date]),
+        MIN('Superstore'[Ship Date]),
+        DAY
+    )
+)
