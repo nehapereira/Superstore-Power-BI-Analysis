@@ -3,8 +3,6 @@
 ![c3478510_1](https://github.com/nehapereira/Superstore-Power-BI-Analysis/assets/136058806/78b896f2-e467-4e6e-ba56-2c019fc3a5c0)
 ![c3478510_2](https://github.com/nehapereira/Superstore-Power-BI-Analysis/assets/136058806/9815cfb2-0561-4327-8fcc-d55cd7283136)
 ![image](https://github.com/nehapereira/Superstore-Power-BI-Analysis/assets/136058806/dfdb1cf4-95aa-48dc-b3d2-004d63eac7fc)
-
-![c3478510_3](https://github.com/nehapereira/Superstore-Power-BI-Analysis/assets/136058806/d536eb84-2aa3-4200-a63c-cf86249bb0e5)
 ![c3478510_4](https://github.com/nehapereira/Superstore-Power-BI-Analysis/assets/136058806/a00bd89c-49a0-4267-8bac-1f9e10787263)
 
 
